@@ -11,7 +11,8 @@ y_values = f(x_values)
 start_x_point = -5
 start_y_point = f(start_x_point)
 
-learning_rate=
+learning_rate=1e-3
+interval=0.1
 
 def main() -> None:
     figure, axis = plt.subplots()
@@ -23,7 +24,7 @@ def main() -> None:
     axis.plot(x_values, y_values)
     plt.xlabel("x")
     plt.ylabel("y")
-    plt.title("Gradient Descent Visualization")
+    plt.title("Gradient Descent")
     #--------------
 
     #--plot point modeled by gradient descent--
@@ -45,7 +46,7 @@ def main() -> None:
     ani = FuncAnimation(
         figure,
         update,
-        interval=0.1,
+        interval=interval,
         blit=True
     )
 
@@ -53,7 +54,7 @@ def main() -> None:
 
     plt.show()
 
-def gradient_descent_iteration(dydx, x, learning_rate=1e-3):
+def gradient_descent_iteration(dydx, x, learning_rate=learning_rate):
     #detect if left or right
     gradient = x-learning_rate*dydx #x_n = x_(n-1)+alpha*∇y, for 1 input, ∇x = dy/dx
     return gradient
