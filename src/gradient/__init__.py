@@ -11,6 +11,8 @@ y_values = f(x_values)
 start_x_point = -5
 start_y_point = f(start_x_point)
 
+learning_rate=
+
 def main() -> None:
     figure, axis = plt.subplots()
 
@@ -37,7 +39,7 @@ def main() -> None:
             x_point = gradient_descent_iteration(np.interp(x_point,x_values,dydx), x_point)
             y_point = f(x_point)
         point.set_data([x_point],[y_point])
-        
+
         return point,
 
     ani = FuncAnimation(
