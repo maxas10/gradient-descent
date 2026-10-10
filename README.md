@@ -9,7 +9,7 @@ $$
 - $x_{n-1}$ is the last value of the input variable x;
 - $x_{n}$ is the updated or new value of the input variable x, iterating $n$ by 1
 - $\alpha$ (optional) is the rate at the which the gradient changes x; used to find the relative minimum of loss functions in ML
-- $f'(x_{n-1})$ is the derivative of the function f(x) at $x_{x-1}$. This represents the slope at that point.
+- $f'(x_{n-1})$ is the derivative of the function f(x) at $x_{n-1}$. This represents the slope at that point.
 
 ### How It Works:
 - We want $x_{n}$ to reach the relative minimum, so we want each iteration of n to make the y value fall towards that minimum.
