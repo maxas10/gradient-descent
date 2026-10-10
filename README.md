@@ -1,6 +1,6 @@
 <img src="./preview.png" alt="Preview" width="400">
 
-### Gradient Descent Visualization using Matplotlib
+### Single Variable Gradient Descent Visualization using Matplotlib
 
 #### The gradient descent function for a single variable is defined by the formula:
 
