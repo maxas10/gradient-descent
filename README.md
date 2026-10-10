@@ -1,3 +1,6 @@
+<img src="./preview.png" alt="Preview" width="900">
+
+
 ### The gradient descent function for a single variable is defined by the formula:
 
 $$
